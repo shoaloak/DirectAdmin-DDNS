@@ -3,16 +3,15 @@ Want to attach your home server to a subdomain but don't know how?
 Use this simple PHP script with a cronjob to dynamically update your DNS records!
 
 ## Setup
-Make sure deps are installed such as `php php-curl`.
+ssh to your home server and make sure deps are installed, such as `php php-curl`.
 
 ```
 # git clone https://github.com/shoaloak/DirectAdmin-DDNS /opt/dyndns
-# touch /opt/dyndns/credentials.json
 # vi /opt/dyndns/credentials.json
 # cat /opt/dyndns/credentials.json
 {
-	"username": "username",
-	"password": "password",
+	"username": "myusername",
+	"password": "mypassword",
 	"hostname": "webXXXX.zxcs.nl",
 	"domain": "mydomain.com",
 	"subdomain": "mysubdomain"
