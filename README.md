@@ -7,6 +7,16 @@ Make sure deps are installed such as `php php-curl`.
 
 ```
 # git clone https://github.com/shoaloak/DirectAdmin-DDNS /opt/dyndns
+# touch /opt/dyndns/credentials.json
+# vi /opt/dyndns/credentials.json
+# cat /opt/dyndns/credentials.json
+{
+	"username": "username",
+	"password": "password",
+	"hostname": "webXXXX.zxcs.nl",
+	"domain": "mydomain.com",
+	"subdomain": "mysubdomain"
+}
 # whereis php # <php location>, usually /usr/bin/php
 # crontab -e
 * * * * * <php location> /opt/dyndns/dyndns.php
