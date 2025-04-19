@@ -1,8 +1,8 @@
 # Dynamic DNS for Directadmin
 Want to attach your home server to a subdomain but don't know how?
-Use this simple PHP script with a cronjob to dynamically update your DNS records!
+Use this either of these scripts with a cronjob to dynamically update your DNS records!
 
-## Setup
+## PHP Setup
 ssh to your home server and make sure deps are installed, such as `php php-curl`.
 
 ```
@@ -20,6 +20,9 @@ ssh to your home server and make sure deps are installed, such as `php php-curl`
 # crontab -e
 * * * * * <php location> /opt/dyndns/dyndns.php
 ```
+
+## Python
+Almost same as PHP: `python3 dyndns.py`. Might need `pip install requests`.
 
 ## Sources
 * Based on [this forum post](https://www.vimexx.nl/forum/14-tutorials/588-dyndns-mogelijk-via-directadmin-api-bij-vimexx?page=1#post-2323).
